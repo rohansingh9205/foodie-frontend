@@ -5,7 +5,7 @@ const InputArea = ({
   name,
   value,
   onChange,
-  type = 'text',
+  type='text',
   placeholder
 }) => {
 
@@ -30,7 +30,7 @@ const InputArea = ({
         placeholder={placeholder}
         type={type}
         min={type === "date" ? today : undefined}
-        className='w-full min-w-0 px-4 py-2 rounded border placeholder:text-xs'
+        className='w-full px-4 py-2 rounded border placeholder:text-xs'
       />
 
     </div>
