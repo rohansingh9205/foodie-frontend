@@ -30,7 +30,7 @@ const InputArea = ({
         placeholder={placeholder}
         type={type}
         min={type === "date" ? today : undefined}
-        className='w-full px-4 py-2 rounded border placeholder:text-xs appearance-auto'
+        className='w-full px-4 py-3 text-base rounded border appearance-auto'
       />
 
     </div>
