@@ -5,7 +5,7 @@ const InputArea = ({
   name,
   value,
   onChange,
-  type='text',
+  type = 'text',
   placeholder
 }) => {
 
@@ -23,28 +23,15 @@ const InputArea = ({
       </label>
 
       <input
-  id={name}
-  name={name}
-  value={value}
-  onChange={onChange}
-  placeholder={placeholder}
-  type={type === "date" ? "text" : type}
-  min={type === "date" ? today : undefined}
-
-  onFocus={(e) => {
-    if (type === "date") {
-      e.target.type = "date";
-    }
-  }}
-
-  onBlur={(e) => {
-    if (!e.target.value && type === "date") {
-      e.target.type = "text";
-    }
-  }}
-
-  className='w-full px-4 py-2 rounded border placeholder:text-xs'
-/>
+        id={name}
+        name={name}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        type={type}
+        min={type === "date" ? today : undefined}
+        className='w-full px-4 py-2 rounded border placeholder:text-xs appearance-auto'
+      />
 
     </div>
 
