@@ -127,7 +127,7 @@ const Reservation = () => {
 
         {/* FORM */}
 
-        <div className='max-w-2xl mx-auto bg-gray-50 p-8 rounded shadow'>
+        <div className='w-full max-w-2xl mx-auto bg-gray-50 p-4 sm:p-8 rounded shadow'>
 
           <form onSubmit={handleSumit}>
 
