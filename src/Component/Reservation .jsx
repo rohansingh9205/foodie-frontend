@@ -55,7 +55,7 @@ const Reservation = () => {
     }
 
     const response = await fetch(
-      "http://localhost:5000/api/orders",
+      "https://foodie-backend-4enr.onrender.com/api/orders",
       {
         method: "POST",
 

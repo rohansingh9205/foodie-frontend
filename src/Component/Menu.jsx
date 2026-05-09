@@ -8,7 +8,7 @@ const Menu = () => {
 
   useEffect(() => {
 
-    fetch("http://localhost:5000/api/products")
+    fetch("https://foodie-backend-4enr.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
